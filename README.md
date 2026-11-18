@@ -40,9 +40,10 @@ No crash. The screen shows:
 SDK 58 links a precompiled `ExpoModulesCore` by default, so an edit in `node_modules/expo-modules-core` has no effect. Build Expo modules from source to test one:
 
 ```sh
-cd ios && EXPO_USE_PRECOMPILED_MODULES=0 pod install && cd ..
 EXPO_USE_PRECOMPILED_MODULES=0 npx expo run:ios
 ```
+
+If `ios/` already exists, run `EXPO_USE_PRECOMPILED_MODULES=0 pod install` in `ios/` first.
 
 ## Environment
 
